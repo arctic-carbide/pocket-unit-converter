@@ -13,8 +13,8 @@
         android:layout_height="match_parent" />
 
     <fragment
-        android:name="umd.mad.frag.tempdist.DistanceFragment"
         android:id="@+id/distance_fragment"
+        android:name="umd.mad.frag.tempdist.DistanceFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
