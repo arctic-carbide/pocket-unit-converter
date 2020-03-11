@@ -7,14 +7,16 @@
     tools:context=".MainActivity">
 
     <fragment
+        android:id="@+id/temperature_fragment"
         android:name="umd.mad.frag.tempdist.TemperatureFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></fragment>
+        android:layout_height="match_parent" />
 
     <fragment
         android:name="umd.mad.frag.tempdist.DistanceFragment"
+        android:id="@+id/distance_fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></fragment>
+        android:layout_height="match_parent" />
 
     <TextView
         android:layout_width="wrap_content"
