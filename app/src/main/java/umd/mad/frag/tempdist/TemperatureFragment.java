@@ -13,7 +13,7 @@ public class TemperatureFragment extends Fragment implements IClickable {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_temperature, container, false);
+        View view = inflater.inflate(R.layout.fragment_convert_fahrenheit, container, false);
 
 
 
