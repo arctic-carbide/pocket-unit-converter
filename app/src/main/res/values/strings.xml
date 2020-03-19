@@ -4,4 +4,6 @@
     <string name="fahrenheit">\u2109</string>
     <string name="celsius">\u2103</string>
     <string name="convert">Convert</string>
+    <string name="feet">Ft.</string>
+    <string name="meters">m</string>
 </resources>

@@ -12,10 +12,23 @@
             android:id="@+id/fahrenheitInputField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:autofillHints="@string/zerodec"
+            android:inputType="numberDecimal"
             android:hint="@string/zerodec"
+            android:textSize="@dimen/textSize"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:text="Yes"-->
+<!--            android:textSize="40sp"-->
+<!--            />-->
+
 
         <TextView
             android:id="@+id/fahrenheitSymbol"
@@ -23,7 +36,7 @@
             android:layout_height="wrap_content"
 
             android:text="@string/fahrenheit"
-            android:textSize="24sp"
+            android:textSize="@dimen/textSize"
             app:layout_constraintTop_toTopOf="@id/fahrenheitInputField"
             app:layout_constraintBottom_toBottomOf="@id/fahrenheitInputField"
             app:layout_constraintLeft_toRightOf="@id/fahrenheitInputField"
@@ -32,45 +45,45 @@
 
         <TextView
             android:id="@+id/celsiusValueText"
-            android:hint="0.00"
+            android:hint="@string/zerodec"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintRight_toLeftOf="@id/celsiusSymbol"
-            app:layout_constraintBottom_toBottomOf="@id/celsiusSymbol"
-            android:textSize="20sp"
-
+            app:layout_constraintTop_toBottomOf="@id/fahrenheitInputField"
+            app:layout_constraintRight_toRightOf="@id/fahrenheitInputField"
+            app:layout_constraintLeft_toLeftOf="@id/fahrenheitInputField"
+            android:textSize="@dimen/textSize"
             />
 
         <TextView
             android:id="@+id/celsiusSymbol"
             android:text="@string/celsius"
-            android:textSize="24sp"
+            android:textSize="@dimen/textSize"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintRight_toRightOf="@id/fahrenheitSymbol"
-            app:layout_constraintTop_toBottomOf="@id/fahrenheitInputField"
-
+            app:layout_constraintLeft_toLeftOf="@id/fahrenheitSymbol"
+            app:layout_constraintTop_toTopOf="@id/celsiusValueText"
+            app:layout_constraintBottom_toBottomOf="@id/celsiusValueText"
             />
 
-        <Button
-            android:id="@+id/temperatureConvertButton"
-            android:text="@string/convert"
-            android:onClick="onClickConvert"
+<!--        <Button-->
+<!--            android:id="@+id/temperatureConvertButton"-->
+<!--            android:text="@string/convert"-->
+<!--            android:onClick="onClickConvert"-->
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="30sp"-->
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
 
-            android:layout_marginBottom="50dp"
-            />
+<!--            android:layout_marginBottom="50dp"-->
+<!--            />-->
 
 
 
