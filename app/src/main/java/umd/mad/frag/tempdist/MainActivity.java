@@ -18,18 +18,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // initialize view with temperature fragment
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment, new TemperatureFragment()).commit();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu); // add options menu to the activity
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.distance_setting) {
-            Toast.makeText(this, R.string.distance_setting, Toast.LENGTH_LONG).show();
+        UnitFragment fragment = (UnitFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
+
+        if(item.getItemId() == R.id.temperature_setting) { // replaces the view with temperature fragment
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new TemperatureFragment()).commit();
+        }
+        else if(item.getItemId() == R.id.distance_setting) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new DistanceFragment()).commit();
         }
         else {
             return super.onContextItemSelected(item);
