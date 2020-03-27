@@ -9,7 +9,7 @@
 
 
         <EditText
-            android:id="@+id/fahrenheitInputField"
+            android:id="@+id/inputField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autofillHints="@string/zerodec"
@@ -20,53 +20,43 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintLeft_toLeftOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            android:text="Yes"-->
-<!--            android:textSize="40sp"-->
-<!--            />-->
-
-
         <TextView
-            android:id="@+id/fahrenheitSymbol"
+            android:id="@+id/unit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="@string/fahrenheit"
+            android:text="@string/miles"
             android:textSize="@dimen/textSize"
-            app:layout_constraintTop_toTopOf="@id/fahrenheitInputField"
-            app:layout_constraintBottom_toBottomOf="@id/fahrenheitInputField"
-            app:layout_constraintLeft_toRightOf="@id/fahrenheitInputField"
+            app:layout_constraintTop_toTopOf="@id/inputField"
+            app:layout_constraintBottom_toBottomOf="@id/inputField"
+            app:layout_constraintLeft_toRightOf="@id/inputField"
 
             />
 
         <TextView
-            android:id="@+id/celsiusValueText"
+            android:id="@+id/outputField"
             android:hint="@string/zerodec"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintTop_toBottomOf="@id/fahrenheitInputField"
-            app:layout_constraintRight_toRightOf="@id/fahrenheitInputField"
-            app:layout_constraintLeft_toLeftOf="@id/fahrenheitInputField"
+            app:layout_constraintTop_toBottomOf="@id/inputField"
+            app:layout_constraintRight_toRightOf="@id/inputField"
+            app:layout_constraintLeft_toLeftOf="@id/inputField"
             android:textSize="@dimen/textSize"
             />
 
         <TextView
-            android:id="@+id/celsiusSymbol"
-            android:text="@string/celsius"
+            android:id="@+id/unit2"
+            android:text="@string/kilometers"
             android:textSize="@dimen/textSize"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintLeft_toLeftOf="@id/fahrenheitSymbol"
-            app:layout_constraintTop_toTopOf="@id/celsiusValueText"
-            app:layout_constraintBottom_toBottomOf="@id/celsiusValueText"
+            app:layout_constraintLeft_toLeftOf="@id/unit1"
+            app:layout_constraintTop_toTopOf="@id/outputField"
+            app:layout_constraintBottom_toBottomOf="@id/outputField"
             />
 
 <!--        <Button-->

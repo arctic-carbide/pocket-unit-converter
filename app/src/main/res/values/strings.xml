@@ -4,6 +4,9 @@
     <string name="fahrenheit">\u2109</string>
     <string name="celsius">\u2103</string>
     <string name="convert">Convert</string>
-    <string name="feet">Ft.</string>
-    <string name="meters">m</string>
+    <string name="miles">mi</string>
+    <string name="kilometers">km</string>
+    <string name="swap">Swap</string>
+    <string name="distance_setting">Distance</string>
+    <string name="temperature_setting">Temperature</string>
 </resources>
